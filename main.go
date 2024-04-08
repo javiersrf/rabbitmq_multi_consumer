@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/javiersrf/rabbitmq_multi_consumer/config"
 	"github.com/javiersrf/rabbitmq_multi_consumer/consumers"
 	"github.com/javiersrf/rabbitmq_multi_consumer/handlers"
 	"github.com/streadway/amqp"
@@ -10,7 +11,8 @@ import (
 
 func main() {
 	fmt.Println("RabbitMQ in Golang: Getting started tutorial")
-	conn := consumers.Init()
+	config := config.InitConfig()
+	conn := consumers.Init(*config)
 	defer conn.Close()
 
 	channel, err := conn.Channel()
