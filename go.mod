@@ -1,4 +1,4 @@
-module github.com/jsrf-consulting/easy_diet_go_consumer
+module github.com/javiersrf/rabbitmq_multi_consumer
 
 go 1.18
 

@@ -3,7 +3,7 @@ package consumers
 import (
 	"log"
 
-	"github.com/jsrf-consulting/easy_diet_go_consumer/handlers"
+	"github.com/javiersrf/rabbitmq_multi_consumer/handlers"
 	"github.com/streadway/amqp"
 )
 

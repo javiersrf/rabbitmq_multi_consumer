@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/jsrf-consulting/easy_diet_go_consumer/consumers"
-	"github.com/jsrf-consulting/easy_diet_go_consumer/handlers"
+	"github.com/javiersrf/rabbitmq_multi_consumer/consumers"
+	"github.com/javiersrf/rabbitmq_multi_consumer/handlers"
 	"github.com/streadway/amqp"
 )
 
